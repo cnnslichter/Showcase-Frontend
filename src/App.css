@@ -1,0 +1,128 @@
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  align-items: center; 
+  justify-content: center;
+  background-color: whitesmoke;
+  background: linear-gradient(
+    155deg,
+    #ffffff 55%,
+    #0000FF 55%,
+    #0000FF 60%,
+    #FF8C00 60%,
+    #FF8C00 65%, 
+    #ffffff 65%
+  );
+}
+
+.auth-form-container, .login-form, .register-form, .verification-container {
+  display: flex; 
+  flex-direction: column;
+}
+
+.home-img {
+  width: 150px;
+  height: 200px;
+}
+
+.items-list {
+  flex-direction: row;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  
+}
+
+.item-details {
+  justify-self: center;
+  .bookmark {
+    display: none;
+  }
+}
+
+.item-details:hover {
+  .bookmark {
+    display: grid;
+    background-color: gainsboro;
+  }
+}
+
+.auth-form-container {
+  padding: 5rem;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.bookmark {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bookmark:hover{
+  background-color:gainsboro
+}
+
+
+label {
+  text-align: left;
+  padding: 0.25 rcm 0; 
+}
+
+input {
+  margin: 0.5 rem 0; 
+  padding: 1rem; 
+  border: 1px solid gainsboro; 
+  border-radius: 10px;
+  background-color: white;
+  margin: 5px;
+}
+
+button {
+  border: none;
+  background-color: cornflowerblue;
+  padding: 10px; 
+  border-radius: 10px; 
+  cursor: pointer;
+}
+
+.link-btn {
+  background: none;
+  text-decoration: underline;
+}
+
+div.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  object-position:  0 0;
+  width: 120px;
+  margin-left: -20px;
+}
+
+.caption {
+  display: block;
+  color:black;
+  font:small-caption;
+  width: 100px;
+}
+
+.inline-div {
+  display: inline-block;
+  display: flex;
+}
+
+.login-logo, .register-logo, .reset-logo
+{
+  height: 200px;
+  width: 250px;
+  align-self: center;
+}
+
+.home-logo
+{
+  height: 130px;
+  width: 140px;
+}
